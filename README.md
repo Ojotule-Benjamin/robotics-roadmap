@@ -39,6 +39,8 @@ of tracking this on git is that the history has to be honest to be useful.
 robotics-roadmap/
 ├── README.md
 ├── PROGRESS.md
+├── RESOURCES.md            ← every course/doc/tool link, by month
+├── SHOPPING-LIST.md        ← every part to buy, prices, vendors, budget tiers
 ├── month-1-electronics.md
 ├── month-2-microcontrollers.md
 ├── month-3-cad-manufacturing.md
@@ -51,6 +53,10 @@ robotics-roadmap/
 └── projects/
     └── (each build gets its own folder: code, wiring notes, photos/video links)
 ```
+
+`RESOURCES.md` and `SHOPPING-LIST.md` make the repo self-contained — you
+shouldn't need to go back to the original article to find a link or a price
+once you're working from this tracker.
 
 ## Source
 
