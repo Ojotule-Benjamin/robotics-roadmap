@@ -7,3 +7,14 @@ install/
 log/
 *.bag
 .DS_Store
+.vscode/
+.idea/
+node_modules/
+
+# secrets — never commit real credentials
+.env
+secrets.h
+secrets.*
+credentials.*
+*.pem
+*.key

@@ -4,12 +4,12 @@ Goal: pick one direction, build a portfolio piece in it, start applying.
 
 ## Week 1 — LeRobot: teleoperate, record, train, deploy
 
-- [ ] Day 1 — Hugging Face Robotics Course, units 0–1 (runs in sim, no hardware needed)
-- [ ] Day 2 — LeRobot docs: understand the full record→train→deploy pipeline
-- [ ] Day 3 — SO-101 LeRobot setup guide: port-finding, motor setup, calibration for recording
+- [ ] Day 1 — [Hugging Face Robotics Course](https://huggingface.co/learn/robotics-course/unit0/1), units 0–1 (runs in sim, no hardware needed)
+- [ ] Day 2 — [LeRobot docs](https://huggingface.co/docs/lerobot/index): understand the full record→train→deploy pipeline
+- [ ] Day 3 — [SO-101 LeRobot setup guide](https://huggingface.co/docs/lerobot/so101): port-finding, motor setup, calibration for recording
 - [ ] Day 4 — Record 15 demonstrations of a single simple task (e.g. pick cube, drop in bin)
 - [ ] Day 5 — Record 35 more (50 total); review dataset quality, remove bad episodes
-- [ ] Day 6 — Train an ACT policy on the 50-episode dataset
+- [ ] Day 6 — Train an ACT policy on the 50-episode dataset ([LeRobot repo](https://github.com/huggingface/lerobot) for implementation reference)
 - [ ] Day 7 — Deploy the policy on the real arm, measure success rate over N trials — **Week 1 checkpoint**
 
 ## Week 2 — Iterate on the policy + survey the VLA landscape
@@ -19,17 +19,21 @@ Goal: pick one direction, build a portfolio piece in it, start applying.
 - [ ] Day 10 — Retrain, redeploy, measure success rate again — document before/after numbers
 - [ ] Day 11 — Read ACT paper/docs section: why predicting action chunks beats single-step prediction
 - [ ] Day 12 — Read Diffusion Policy overview: denoising-process framing, reported gains
-- [ ] Day 13 — Survey open VLAs: OpenVLA, π₀/π₀-FAST, GR00T N1.7, SmolVLA — note license, size, VRAM needs for each
+- [ ] Day 13 — Survey open VLAs — note license, size, VRAM needs for each:
+  - [π₀ / π₀-FAST / π₀.₅](https://github.com/Physical-Intelligence/openpi) — Apache 2.0, weights open, transfer not guaranteed off Physical Intelligence's own robots
+  - [OpenVLA](https://openvla.github.io/) — 7B, fully open, trained on 970k episodes from Open X-Embodiment
+  - [GR00T N1.7](https://github.com/Nvidia/Isaac-GR00T) — code Apache 2.0, weights under NVIDIA Open Model License, needs 16GB+ VRAM
+  - [SmolVLA](https://huggingface.co/lerobot/smolvla_base) — compact, right one to fine-tune on an SO-101
 - [ ] Day 14 — Write a one-page comparison of the VLAs surveyed — **Week 2 checkpoint, push dataset + policy + comparison to GitHub/LeRobot Hub**
 
 ## Week 3 — Reinforcement learning for robotics
 
-- [ ] Day 15 — MuJoCo Playground: run the first Colab tutorial (locomotion)
+- [ ] Day 15 — [MuJoCo Playground](https://github.com/google-deepmind/mujoco_playground): run the first Colab tutorial (locomotion) — no GPU needed beyond free Colab
 - [ ] Day 16 — MuJoCo Playground: second tutorial (manipulation or vision task)
 - [ ] Day 17 — Train a quadruped locomotion policy from a Colab tutorial
 - [ ] Day 18 — Modify the reward function, observe how the gait changes, document it
-- [ ] Day 19 — CS 285 (Levine): watch the imitation learning + policy gradient lectures
-- [ ] Day 20 — Write a short note connecting what you just did (RL) to what you did in Week 1 (imitation learning) — when would you reach for each?
+- [ ] Day 19 — [CS 285 — Sergey Levine, UC Berkeley](https://rail.eecs.berkeley.edu/deeprlcourse): watch the imitation learning + policy gradient lectures
+- [ ] Day 20 — Write a short note connecting what you just did (RL) to what you did in Week 1 (imitation learning) — when would you reach for each? Deeper option (needs RTX hardware): [NVIDIA Isaac Lab](https://github.com/isaac-sim/IsaacLab)
 - [ ] Day 21 — Push the RL experiment + writeup to GitHub — **Week 3 checkpoint**
 
 ## Week 4 — Pick a direction + build the portfolio
@@ -47,7 +51,7 @@ Goal: pick one direction, build a portfolio piece in it, start applying.
 - [ ] Day 29 — Review PID, sensor fusion/Kalman, SLAM concepts, RRT/path planning — write short answers to each from memory
 - [ ] Day 30 — Have someone interrogate you about one of your own repos for 20 minutes — specific code, not concepts. If you can't answer 3 levels deep, go fix that project first
 - [ ] Day 31 — Repeat the interrogation on repo #2
-- [ ] Day 32 — Repeat on repo #3; update `logs/` with anything you couldn't answer well
+- [ ] Day 32 — Repeat on repo #3; update `logs/` with anything you couldn't answer well. Reference question bank: [Glassdoor Robotics Engineer interviews](https://www.glassdoor.com/Interview/robotics-engineer-interview-questions-SRCH_KO0,17.htm) (1,721 questions, 877 companies)
 - [ ] Day 33 — Start applying: technician roles, teleoperation/data-collection roles, or direct outreach to small robotics startups — **Month 6 milestone**
 
 ### Month 6 Milestone check
