@@ -1,0 +1,9 @@
+# build artifacts / caches you don't want tracked
+__pycache__/
+*.pyc
+.venv/
+build/
+install/
+log/
+*.bag
+.DS_Store
