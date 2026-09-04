@@ -75,7 +75,7 @@ Two ways to use `logs/TEMPLATE.md`:
 
 Either is fine — pick whichever you'll actually keep up.
 
-## Suggested repo layout
+## Repo layout
 
 ```
 robotics-roadmap/
@@ -110,26 +110,6 @@ shouldn't need to leave the month file you're working from. `RESOURCES.md`
 and `SHOPPING-LIST.md` still exist as full standalone references (every
 link/price in one place, useful for browsing ahead or re-finding something),
 but day-to-day you can just work straight down one month file.
-
-## Before making this public
-
-- **Check your commit email**: `git log --format='%an <%ae>'`. If it shows a
-  real personal email, switch to GitHub's private noreply address
-  (Settings → Emails → "Keep my email addresses private") before flipping
-  visibility — public commit history exposes whatever email is in it, forever.
-- **Never commit real WiFi credentials or API tokens.** Put them in
-  `secrets.h` / `.env` (already gitignored) and reference them from code
-  instead of hardcoding — this matters starting Month 2 (ESP32 WiFi) and
-  Month 6 (Hugging Face token for pushing to the LeRobot Hub).
-- **Don't commit large binaries directly** — videos, ROS bags, big CAD
-  exports. Link videos externally (unlisted YouTube works well) and use
-  [Git LFS](https://git-lfs.com/) for anything sizeable you do want tracked;
-  GitHub hard-caps individual files at 100MB.
-- **Strip photo/video metadata** if it might contain GPS location (most
-  phone cameras geotag by default) — check your OS's share/export settings
-  before uploading build photos.
-- A `LICENSE` (MIT) is included so it's clear the repo's content can be
-  reused — remove or change it if you'd rather keep all rights reserved.
 
 ## Source
 
