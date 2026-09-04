@@ -50,7 +50,21 @@ result to `.github/badges/progress.json`. Nothing to set up — it just works
 once this is pushed to GitHub, using the `contents: write` permission
 Actions gets by default.
 
+## Documenting what you learn
+
+`notes/` is separate from `logs/`: `logs/` is for debugging failures
+("what broke"), `notes/` is for concepts you're learning as you read/watch
+each resource. Copy `notes/TEMPLATE.md` to a new file per topic (e.g.
+`notes/month-1-static-electricity.md`) and fill it in **in your own words**
+right after finishing a resource — not while reading it. The template
+forces a few things that actually help retention: explaining without
+re-reading the source, linking the idea to something you already know, and
+a delayed recall check you fill in a few days later without peeking at your
+first attempt. See `notes/month-1-static-electricity.md` for a filled-out
+example.
+
 ## Logging what broke
+
 
 Two ways to use `logs/TEMPLATE.md`:
 - Copy it locally to `logs/day-XXX.md` and commit it alongside that day's work, or
@@ -77,8 +91,11 @@ robotics-roadmap/
 ├── month-6-robot-learning.md
 ├── scripts/
 │   └── progress.py         ← prints % complete + commit streak, feeds the badge
+├── notes/
+│   ├── TEMPLATE.md         ← for concepts you're learning (own words + recall check)
+│   └── month-1-*.md        (one per topic)
 ├── logs/
-│   ├── TEMPLATE.md
+│   ├── TEMPLATE.md         ← for debugging failures ("what broke")
 │   └── day-XXX.md   (one per failure worth documenting)
 ├── projects/
 │   └── (each build gets its own folder: code, wiring notes, photos/video links)
